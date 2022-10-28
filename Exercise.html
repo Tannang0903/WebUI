@@ -217,6 +217,7 @@
                 enabled: false
             },
             lineHeight: 19,
+            
         });
 
         //change theme
@@ -229,14 +230,16 @@
         var input = "";
         codeBlock.addEventListener('input', (event) => {
             input = event.target.value;
+            console.log(input);
         });
+        console.log(typeof(input));
 
         //change language
         var languageSelector = document.querySelector("#language_Selector");
         languageSelector.addEventListener('change', (event) => {
             codeBlock.textContent = "";
             var editorCodeBlock = monaco.editor.create(codeBlock, {
-                value: codeContent,
+                value: input,
                 language: event.target.value,
                 theme: 'vs',
                 lineNumber: 'on',
@@ -253,7 +256,6 @@
                 },
                 lineHeight: 19,
             });
-            // codeBlock.textContent = input;
         });
 
 
