@@ -6,6 +6,7 @@
 .user__block {
     margin-top: 5%;
 }
+
 .user__card {
     display: flex;
     flex-direction: column;
@@ -120,6 +121,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .user__statistic-problem {
     text-align: center;
     border: 1px solid #CFD2CF;
@@ -133,7 +135,7 @@
     border: 1px solid #0C6EFD;
 }
 
-.user__statistic-problem a{
+.user__statistic-problem a {
     color: black;
     text-decoration: none;
 }

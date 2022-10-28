@@ -6,7 +6,6 @@
     position: fixed;
     z-index: 99;
     background-color: #fff;
-
 }
 
 .header__content {
@@ -90,7 +89,7 @@
     margin-left: 15px;
     font-size: 1.4rem;
     color: #515a6e;
-    padding:10px 15px;
+    padding: 10px 15px;
     border: 1px solid #515a6e;
     border-radius: 50px;
 }
@@ -127,7 +126,7 @@
 .header__subItem-link {
     text-decoration: none;
     color: #666;
-    font-size: 1.4rem  
+    font-size: 1.4rem
 }
 
 /* Header User */
@@ -166,19 +165,19 @@
     background-color: #fff;
 }
 
-.header__user:hover .header__user-info{
+.header__user:hover .header__user-info {
     display: block;
 }
 
-.header__user-item {
+.header__user-info-item {
     padding: 8px;
 }
 
-.header__user-item:last-child {
+.header__user-info-item:last-child {
     border-top: 1px solid #ccc;
 }
 
-.header__user-item:hover {
+.header__user-info-item:hover {
     background-color: rgb(233, 233, 233);
 }
 

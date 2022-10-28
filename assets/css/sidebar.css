@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  background-color: #F0F2F5;
+  margin-top: 0px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#body-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#sidebar-container {
+  min-height: 100vh;
+  background-color: #132644;
+  padding: 0;
+  width: 250px;
+  padding-top: var(--header-height);
+}
+
+.sidebar-expanded {
+  width: 250px;
+}
+
+s .sidebar-collapsed {
+  width: 60px;
+}
+
+.list-group-item {
+  font-size: 1.4rem;
+  padding: 15px 10px;
+}
+
+#sidebar-container .list-group a {
+  color: white;
+}
+
+#sidebar-container .list-group li.list-group-item {
+  background-color: #132644;
+}
+
+#sidebar-container .list-group .sidebar-submenu a {
+  padding-left: 30px;
+}
+
+.sidebar-submenu {
+  font-size: 0.9rem;
+}
+
+.sidebar-separator-title {
+  background-color: #132644;
+  height: 35px;
+}
+
+.sidebar-separator {
+  background-color: #132644;
+  height: 25px;
+}
+
+.logo-separator {
+  background-color: #132644;
+  height: 60px;
+}
+
+a.bg-dark {
+  background-color: #132644 !important;
+}
+
+.icon {
+  padding-right: 15px;
+}
+
+.subicon {
+  padding-right: 15px;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+}
+
+.padding {
+  padding: 30px;
+}
+
+.pl {
+  padding-left: 50px;
+}

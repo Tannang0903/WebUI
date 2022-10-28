@@ -5,7 +5,7 @@
 }
 
 /* Exercise */
-.container__exercise-header {
+.container__problem-header {
     margin-bottom: 30px;
 }
 
@@ -158,7 +158,7 @@
 }
 
 /* Container Search */
-.container__exercise-search {
+.container__problem-search {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -169,25 +169,25 @@
     border-radius: 3px;
 }
 
-.container__exercise-search-list {
+.container__problem-search-list {
     font-size: 2rem;
     color: #666;
 }
 
-.container__exercise-search-action {
+.container__problem-search-action {
     display: flex;
     align-items: center;
 
 }
 
-.container__exercise-level {
+.container__problem-level {
     padding: 6px 12px;
     border-radius: 5px;
     background-color: #eee;
     position: relative;
 }
 
-.container__exercise-level::before {
+.container__problem-level::before {
     content: "";
     position: absolute;
     top: 25px;
@@ -196,11 +196,11 @@
     height: 20px;
 }
 
-.container__exercise-level:hover .container__exercise-subLevel{
+.container__problem-level:hover .container__problem-subLevel{
     display: block;
 }
 
-.container__exercise-subLevel {
+.container__problem-subLevel {
     display: none;
     position: absolute;
     background-color: #fff;
@@ -214,34 +214,34 @@
     overflow: hidden;
 }
 
-.container__exercise-subLevel-item {
+.container__problem-subLevel-item {
     font-size: 1.4rem;
     padding: 10px;
     color: #666;
 }
 
-.container__exercise-subLevel-item:hover {
+.container__problem-subLevel-item:hover {
     background-color: #f1f1f1;
 }
 
-.container__exercise-level-text {
+.container__problem-level-text {
     font-size: 1.6rem;
     color: #666;
     margin-right: 4px;
 }
 
-.container__exercise-form-search {
+.container__problem-form-search {
     margin: 0 40px;
     position: relative;
 
 }
 
-.container__exercise-form-input {
+.container__problem-form-input {
     padding: 6px 12px;
     color: #666;
 }
 
-.container__exercise-form-icon {
+.container__problem-form-icon {
     position: absolute;
     right: 10px;
     top: 10px;

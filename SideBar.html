@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/sidebar.css"/>
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>SideBar</title>
+    </head>
+    <body>
+        <header id="header">
+        <div class="grid wide">
+            <div class="row">
+                <div class="header__content">
+                    <ul class="header__list">
+                        <li class="header__img">
+                            <a href="" class="header__item-link">
+                                <img src="./assets/img/logo.png" alt="" class="header__logo">
+                            </a>  
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-book"></i>
+                                <p class="header__item-title">Bài tập</p>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-trophy"></i>
+                                <p class="header__item-title">Kỳ thi</p>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-cloud-arrow-up"></i>
+                                <p class="header__item-title">Bài nộp</p>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-ranking-star"></i>
+                                <p class="header__item-title">Xếp hạng</p>
+                                <i class="header__item-icon fa-solid fa-angle-down"></i>
+                            </a>
+                            <!-- Header sublist -->
+                            <ul class="header__subList">
+                                <li class="header__subItem">
+                                    <a href="" class="header__subItem-link">ACM Rank</a>
+                                </li>
+                                <li class="header__subItem">
+                                    <a href="" class="header__subItem-link">OI Rank</a>
+                                </li>
+                                <li class="header__subItem">
+                                    <a href="" class="header__subItem-link">Experience Rank</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-bolt-lightning"></i>
+                                <p class="header__item-title">Live IDE</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="header__menu">
+                        <li class="header__menu-item" id="login">Đăng nhập</li>
+                        <li class="header__menu-item" id="register">Đăng ký</li>
+                    </ul> -->
+
+                    <!-- Header User -->
+                    <div class="header__user">
+                        <span class="header__user-name">Tấn Năng
+                            <i class="header__item-icon fa-solid fa-angle-down"></i>
+                        </span>
+                        <ul class="header__user-info">
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Hồ sơ</a>
+                            </li>
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Bài nộp</a>
+                            </li>
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Cài đặt</a>
+                            </li>
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+        <div class="container-fluid p-0">
+            <div class="row" id="body-row">
+                <div id="sidebar-container" class="sidebar-expanded d-md-block">
+                    <ul class="list-group">
+                        <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed padding">
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="text">Admin</span>
+                            </a>
+                        </li>
+                        <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+                        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa-solid fa-layer-group icon"></span>
+                                <span class="menu-collapsed">Quản Lí</span>
+                                <span class="submenu-icon me-auto"></span>
+                                <i class="fa-solid fa-angle-down submenu-icon"></i>
+                            </div>
+                        </a>
+                            <div id="submenu1" class="collapse sidebar-submenu">
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="fa-solid fa-users subicon"></span>
+                                    <span class="menu-collapsed">Quản Lí Người Dùng</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="fa-solid fa-book subicon"></span>
+                                    <span class="menu-collapsed">Quản Lí Bài Tập</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="fa-solid fa-tags subicon"></span>
+                                    <span class="menu-collapsed">Quản Lí Thẻ</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="fa-solid fa-rectangle-list subicon"></span>
+                                    <span class="menu-collapsed">Quản Lí Bài Nộp</span>
+                                </a>
+                            </div>
+                        <a href="#" aria-expanded="false"
+                        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa-solid fa-user icon"></span>
+                                <span class="menu-collapsed">Thông tin</span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+                        <a href="#" class="bg-dark list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+                                <span class="menu-collapsed">
+                                    Đăng xuất
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" data-toggle="sidebar-colapse"
+                        class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span id="collapse-icon" class="fa mr-3"></span>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col" , style="overflow-y: scroll; max-height: 100vh">
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+                integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+                crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+                crossorigin="anonymous"></script>
+        <script>
+            $('#body-row .collapse').collapse('hide');
+            $('#collapse-icon').addClass('fa-angle-double-left');
+            $('[data-toggle=sidebar-colapse]').click(function () {
+                SidebarCollapse();
+            });
+
+            function SidebarCollapse() {
+                $('.menu-collapsed').toggleClass('d-none');
+                $('.sidebar-submenu').toggleClass('d-none');
+                $('.submenu-icon').toggleClass('d-none');
+                $('fa-solid fa-angle-down pl').toggleClass('d-none');
+                $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+
+                var SeparatorTitle = $('.sidebar-separator-title');
+                if (SeparatorTitle.hasClass('d-flex')) {
+                    SeparatorTitle.removeClass('d-flex');
+                } else {
+                    SeparatorTitle.addClass('d-flex');
+                }
+
+                $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+            }
+        </script>
+    </body>
+</html>
