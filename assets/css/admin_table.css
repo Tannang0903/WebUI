@@ -3,7 +3,7 @@
     background-color: #f1f1f1;
 }
 
-.list-exercise__card {
+.list__exercise-card {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -12,33 +12,31 @@
     padding: 10px;
     border-radius: 5px;
 }
-h2{
+
+.list__exercise-title {
     padding-top: 10px;
     font-size: 16px;
 }
-.list-user{
+
+.list__user {
     font-size: medium;
 }
-.a{
-    padding-right: 8px;
-}
-.list{
+
+.list {
     padding-left: 2px;
     list-style-type: none;
 }
-li{
+
+.list__item {
     padding: 4px;
 }
-.list__info {
-    background-color: white;
-    margin-left: 2%;
-    flex: 0 0 77%;
-    max-width: 73%;
-    padding: 10px;
+
+.list__item-icon  {
+    padding-right: 8px;
 }
 
-.tilte {
-    display: flex;
+.list__info {
+    background-color: white;
 }
 
 table {
@@ -46,15 +44,17 @@ table {
     width: 100%;
     border: #666;
 }
+
 th {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     font-weight: bolder;
     border-bottom: 1px solid #ddd;
 }
+
 td {
-    text-align: left;
+    text-align: center;
     padding: 10px;
     font-size: 12px;
     border-bottom: 1px solid #ddd;
@@ -63,35 +63,39 @@ td {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
-    
+
 }
-tr:hover {background-color: #ddd;}
+
+tr:hover {
+    background-color: #ddd;
+}
+
 .label {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
+/* success */
 .success {
     background-color: #19be6b;
 }
 
-/* Green */
+/* info */
 .info {
     background-color: #2196F3;
 }
 
-/* Blue */
+/* warning */
 .warning {
-    background-color: #ff9800;
+    background-color: #ffcc00;
 }
 
-/* Orange */
-.danger {
+/* erorr */
+.erorr {
     background-color: #f44336;
 }
 
-/* Red */
 .other {
     background-color: #e7e7e7;
     color: black;
@@ -105,7 +109,6 @@ tr:hover {background-color: #ddd;}
     margin-bottom: 15px;
     align-items: center;
     padding: 15px;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     border-radius: 3px;
 }
 
@@ -117,13 +120,12 @@ tr:hover {background-color: #ddd;}
 .container__problem-search-action {
     display: flex;
     align-items: center;
-
+    justify-content: right;
 }
 
 .container__problem-level {
     padding: 6px 12px;
     border-radius: 5px;
-    /* background-color: #eee; */
     position: relative;
 }
 
@@ -136,7 +138,7 @@ tr:hover {background-color: #ddd;}
     height: 20px;
 }
 
-.container__problem-level:hover .container__problem-subLevel{
+.container__problem-level:hover .container__problem-subLevel {
     display: block;
 }
 
@@ -144,7 +146,7 @@ tr:hover {background-color: #ddd;}
     display: none;
     position: absolute;
     background-color: #fff;
-    left: 0;
+    right: 0;
     padding: 0;
     top: 25px;
     list-style: none;
@@ -152,6 +154,7 @@ tr:hover {background-color: #ddd;}
     width: 100px;
     border-radius: 3px;
     overflow: hidden;
+    width: 150px;
 }
 
 .container__problem-subLevel-item {
@@ -173,7 +176,7 @@ tr:hover {background-color: #ddd;}
 .container__problem-form-search {
     margin: 0 40px;
     position: relative;
-
+   
 }
 
 .container__problem-form-input {
