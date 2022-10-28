@@ -1,254 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Training</title>
-        <link rel="stylesheet" href="./assets/css/header.css">
-        <link rel="stylesheet" href="./assets/css/exercise.css">
-        <link rel="stylesheet" href="./assets/css/base.css">
-        <link rel="stylesheet" href="./assets/css/grid.css">
-        <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.2-web/css/all.css">
-        <link rel="stylesheet" data-name="vs/editor/editor.main" href="node_modules/monaco-editor/min/vs/editor/editor.main.css">
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    </head>
 
-    <body>
-        <header id="header">
-            <div class="grid wide">
-                <div class="row">
-                    <div class="header__content">
-                        <ul class="header__list">
-                            <li class="header__img">
-                                <a href="" class="header__item-link">
-                                    <img src="./assets/img/logo.png" alt="" class="header__logo">
-                                </a>  
-                            </li>
-                            <li class="header__item">
-                                <a href="" class="header__item-link">
-                                    <i class="header__item-icon fa-solid fa-book"></i>
-                                    <p class="header__item-title">Bài tập</p>
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="" class="header__item-link">
-                                    <i class="header__item-icon fa-solid fa-trophy"></i>
-                                    <p class="header__item-title">Kỳ thi</p>
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="" class="header__item-link">
-                                    <i class="header__item-icon fa-solid fa-cloud-arrow-up"></i>
-                                    <p class="header__item-title">Bài nộp</p>
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="" class="header__item-link">
-                                    <i class="header__item-icon fa-solid fa-ranking-star"></i>
-                                    <p class="header__item-title">Xếp hạng</p>
-                                    <i class="header__item-icon fa-solid fa-angle-down"></i>
-                                </a>
-                                <!-- Header sublist -->
-                                <ul class="header__subList">
-                                    <li class="header__subItem">
-                                        <a href="" class="header__subItem-link">ACM Rank</a>
-                                    </li>
-                                    <li class="header__subItem">
-                                        <a href="" class="header__subItem-link">OI Rank</a>
-                                    </li>
-                                    <li class="header__subItem">
-                                        <a href="" class="header__subItem-link">Experience Rank</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header__item">
-                                <a href="" class="header__item-link">
-                                    <i class="header__item-icon fa-solid fa-bolt-lightning"></i>
-                                    <p class="header__item-title">Live IDE</p>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- <ul class="header__menu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training</title>
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/exercise.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" data-name="vs/editor/editor.main"
+        href="node_modules/monaco-editor/min/vs/editor/editor.main.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="grid wide">
+            <div class="row">
+                <div class="header__content">
+                    <ul class="header__list">
+                        <li class="header__img">
+                            <a href="" class="header__item-link">
+                                <img src="./assets/img/logo.png" alt="" class="header__logo">
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-book"></i>
+                                <p class="header__item-title">Bài tập</p>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-trophy"></i>
+                                <p class="header__item-title">Kỳ thi</p>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-cloud-arrow-up"></i>
+                                <p class="header__item-title">Bài nộp</p>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-ranking-star"></i>
+                                <p class="header__item-title">Xếp hạng</p>
+                                <i class="header__item-icon fa-solid fa-angle-down"></i>
+                            </a>
+                            <!-- Header sublist -->
+                            <ul class="header__subList">
+                                <li class="header__subItem">
+                                    <a href="" class="header__subItem-link">ACM Rank</a>
+                                </li>
+                                <li class="header__subItem">
+                                    <a href="" class="header__subItem-link">OI Rank</a>
+                                </li>
+                                <li class="header__subItem">
+                                    <a href="" class="header__subItem-link">Experience Rank</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                <i class="header__item-icon fa-solid fa-bolt-lightning"></i>
+                                <p class="header__item-title">Live IDE</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="header__menu">
                             <li class="header__menu-item" id="login">Đăng nhập</li>
                             <li class="header__menu-item" id="register">Đăng ký</li>
                         </ul> -->
-    
-                        <!-- Header User -->
-                        <div class="header__user">
-                            <span class="header__user-name">Tấn Năng
-                                <i class="header__item-icon fa-solid fa-angle-down"></i>
-                            </span>
-                            <ul class="header__user-info">
-                                <li class="header__user-info-item">
-                                    <a href="" class="header__user-link">Hồ sơ</a>
-                                </li>
-                                <li class="header__user-info-item">
-                                    <a href="" class="header__user-link">Bài nộp</a>
-                                </li>
-                                <li class="header__user-info-item">
-                                    <a href="" class="header__user-link">Cài đặt</a>
-                                </li>
-                                <li class="header__user-info-item">
-                                    <a href="" class="header__user-link">Đăng xuất</a>
-                                </li>
-                            </ul>
+
+                    <!-- Header User -->
+                    <div class="header__user">
+                        <span class="header__user-name">Tấn Năng
+                            <i class="header__item-icon fa-solid fa-angle-down"></i>
+                        </span>
+                        <ul class="header__user-info">
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Hồ sơ</a>
+                            </li>
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Bài nộp</a>
+                            </li>
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Cài đặt</a>
+                            </li>
+                            <li class="header__user-info-item">
+                                <a href="" class="header__user-link">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="container_problem">
+                <div class="row">
+                    <div class="col c-9">
+                        <div class="problem__main">
+                            <div class="problem__main-description"></div>
+
+                            <div class="problem__main-action">
+                                <div class="problem__main-selector">
+                                    <div class="problem__main-selector-language">
+                                        <span class="problem__main-text">Ngôn ngữ: </span>
+                                        <select class="problem__main-language-list" id="language_Selector">
+                                            <option value="">language</option>
+                                            <option value="c">c</option>
+                                            <option value="cpp">c++</option>
+                                            <option value="java">java</option>
+                                        </select>
+                                        <button class="problem__main-btn-reset" id="btn-reset">
+                                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="problem__main-selector-UI" id="ui_Selector">
+                                        <span class="problem__main-text">Giao diện: </span>
+                                        <select class="problem__main-UI-list">
+                                            <option value="vs">Light</option>
+                                            <option value="vs-dark">Dark</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="problem__main-codeBlcok">
+                                    <pre id="codeBlock">
+                                    </pre>
+                                </div>
+
+                                <div class="problem__main-submit">
+                                    <button type="submit" class="problem__main-submit-btn">
+                                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        <span>Nôp bài</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col c-3">
+                        <div class="problem__sub">
+                            <div class="problem__sub-header">
+                                <a href="" class="problem__sub-submit">
+                                    <i class="problem__sub-header-icon fa-solid fa-cloud-arrow-up"></i>
+                                    <span class="problem__sub-header-text">Nôp bài</span>
+                                </a>
+                                <a href="" class="problem__sub-listSubmit">
+                                    <i class="problem__sub-header-icon fa-solid fa-bars"></i>
+                                    <span class="problem__sub-header-text">Danh sách bài nộp</span>
+                                </a>
+                            </div>
+
+                            <div class="problem__sub-infoProblem">
+                                <div class="problem__sub-infoProblem-title">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>Thông tin bài tập</span>
+                                </div>
+                                <div class="problem__sub-infoProblem-item">
+                                    <span class="problem__sub-infoProblem-key">ID</span>
+                                    <span class="problem__sub-infoProblem-value">CB01</span>
+                                </div>
+                                <div class="problem__sub-infoProblem-item">
+                                    <span class="problem__sub-infoProblem-key">Điểm</span>
+                                    <span class="problem__sub-infoProblem-value">100</span>
+                                </div>
+                            </div>
+
+                            <div class="problem__sub-sameProblem">
+                                <div class="problem__sub-sameProblem-title">
+                                    <i class="fa-solid fa-file"></i>
+                                    <span>Bài tập tương tự</span>
+                                </div>
+                                <a href="" class="problem__sub-sameProblem-item">DIVMOD - Thương và dư</a>
+                                <a href="" class="problem__sub-sameProblem-item">LC3A - Đánh máy nhanh</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <div class="container">
-            <div class="grid">
-                <div class="container_problem">
-                    <div class="row">
-                        <div class="col c-9">
-                            <div class="problem__main">
-                                <div class="problem__main-description"></div>
-
-                                <div class="problem__main-action">
-                                    <div class="problem__main-selector">
-                                        <div class="problem__main-selector-language">
-                                            <span class="problem__main-text">Ngôn ngữ: </span>
-                                            <select class="problem__main-language-list" id="language_Selector">
-                                                <option value="java">java</option>
-                                                <option value="c">c</option>
-                                                <option value="cpp">c++</option>
-                                            </select>
-                                            <button class="problem__main-btn-reset" id="btn-reset">
-                                                <i class="fa-solid fa-arrow-rotate-left"></i>
-                                            </button>
-                                        </div>
-
-                                        <div class="problem__main-selector-UI" id="ui_Selector">
-                                            <span class="problem__main-text">Giao diện: </span>
-                                            <select class="problem__main-UI-list">
-                                                <option value="vs">Light</option>
-                                                <option value="vs-dark">Dark</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="problem__main-codeBlcok">
-                                        <pre  id="codeBlock">
-                                        <code></code>
-                                        </pre>
-                                    </div>
-
-                                    <div class="problem__main-submit">
-                                        <button type="submit" class="problem__main-submit-btn">
-                                            <i class="fa-solid fa-cloud-arrow-up"></i>
-                                            <span>Nôp bài</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col c-3">
-                            <div class="problem__sub">
-                                <div class="problem__sub-header">
-                                    <a href="" class="problem__sub-submit">
-                                        <i class="problem__sub-header-icon fa-solid fa-cloud-arrow-up"></i>
-                                        <span class="problem__sub-header-text">Nôp bài</span>
-                                    </a>
-                                    <a href="" class="problem__sub-listSubmit">
-                                        <i class="problem__sub-header-icon fa-solid fa-bars"></i>
-                                        <span class="problem__sub-header-text">Danh sách bài nộp</span>
-                                    </a>
-                                </div>
-
-                                <div class="problem__sub-infoProblem">
-                                    <div class="problem__sub-infoProblem-title">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <span>Thông tin bài tập</span>
-                                    </div>
-                                    <div class="problem__sub-infoProblem-item">
-                                        <span class="problem__sub-infoProblem-key">ID</span>
-                                        <span class="problem__sub-infoProblem-value">CB01</span>
-                                    </div>
-                                    <div class="problem__sub-infoProblem-item">
-                                        <span class="problem__sub-infoProblem-key">Điểm</span>
-                                        <span class="problem__sub-infoProblem-value">100</span>
-                                    </div>
-                                </div>
-    
-                                <div class="problem__sub-sameProblem">
-                                    <div class="problem__sub-sameProblem-title">
-                                        <i class="fa-solid fa-file"></i>
-                                        <span>Bài tập tương tự</span>
-                                    </div>
-                                    <a href="" class="problem__sub-sameProblem-item">DIVMOD - Thương và dư</a>
-                                    <a href="" class="problem__sub-sameProblem-item">LC3A - Đánh máy nhanh</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div>
         </div>
-        
-        <script>var require = {paths: {'vs': 'node_modules/monaco-editor/min/vs'}};</script>
-        <script src="node_modules/monaco-editor/min/vs/loader.js"></script>
-        <script src="node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
-        <script src="node_modules/monaco-editor/min/vs/editor/editor.main.js" ></script>
-        <script>
-            var codeBlock = document.getElementById('codeBlock');
-            var codeContent = $.trim($('#codeBlock').text());  
-                $('#codeBlock').html('');
-                var editorCodeBlock = monaco.editor.create(codeBlock, {
-                    value: codeContent,
-                    language: 'c',
-                    theme: 'vs',
-                    lineNumber: 'on',
-                    glyphMargin: false,
-                    vertical: 'auto',
-                    horizontal: 'auto',
-                    verticalScrollbarSize: 10,
-                    horizontalScrollbarSize: 10,
-                    scrollBeyondLastLine: false,
-                    readOnly: false,
-                    automaticLayout: true,
-                    minimap: {
-                        enabled: false
-                    },
-                    lineHeight: 19,
-                });
-            $("#codeBlock").height(400);
+    </div>
 
-            var uiSelector = document.querySelector("#ui_Selector");
-            uiSelector.addEventListener('change', (event) => {
-                monaco.editor.setTheme(event.target.value);
-            });
-            var languageSelector = document.querySelector("#language_Selector");
-            languageSelector.addEventListener('change', (event) => {
-                editorCodeBlock.language = event.target.value;
-                // monaco.editor.setModelLanguage(event.target.value);
-            });
+    <script>var require = { paths: { 'vs': 'node_modules/monaco-editor/min/vs' } };</script>
+    <script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script src="node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+    <script src="node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+    <script>
+        var codeBlock = document.getElementById('codeBlock');
+        var codeContent = $.trim($('#codeBlock').text());
+        $('#codeBlock').html('');
+        $("#codeBlock").height(400);
 
-            var btnReset = document.querySelector("#btn-reset");
-            btnReset.addEventListener('click', (event) => {
-                var oldLanguage = languageSelector.value;
-                codeBlock.textContent = "";
-                var editorCodeBlock = monaco.editor.create(codeBlock, {
-                    value: codeContent,
-                    language: oldLanguage,
-                    theme: 'vs',
-                    lineNumber: 'on',
-                    glyphMargin: false,
-                    vertical: 'auto',
-                    horizontal: 'auto',
-                    verticalScrollbarSize: 10,
-                    horizontalScrollbarSize: 10,
-                    scrollBeyondLastLine: false,
-                    readOnly: false,
-                    automaticLayout: true,
-                    minimap: {
-                        enabled: false
-                    },
-                    lineHeight: 19,
-                });
-                console.log(editorCodeBlock);
+        // create
+        var editorCodeBlock = monaco.editor.create(codeBlock, {
+            value: codeContent,
+            language: '',
+            theme: 'vs',
+            lineNumber: 'on',
+            glyphMargin: false,
+            vertical: 'auto',
+            horizontal: 'auto',
+            verticalScrollbarSize: 10,
+            horizontalScrollbarSize: 10,
+            scrollBeyondLastLine: false,
+            readOnly: false,
+            automaticLayout: true,
+            minimap: {
+                enabled: false
+            },
+            lineHeight: 19,
+        });
+
+        //change theme
+        var uiSelector = document.querySelector("#ui_Selector");
+        uiSelector.addEventListener('change', (event) => {
+            monaco.editor.setTheme(event.target.value);
+        });
+
+        //getInput
+        var input = "";
+        codeBlock.addEventListener('input', (event) => {
+            input = event.target.value;
+        });
+
+        //change language
+        var languageSelector = document.querySelector("#language_Selector");
+        languageSelector.addEventListener('change', (event) => {
+            codeBlock.textContent = "";
+            var editorCodeBlock = monaco.editor.create(codeBlock, {
+                value: codeContent,
+                language: event.target.value,
+                theme: 'vs',
+                lineNumber: 'on',
+                glyphMargin: false,
+                vertical: 'auto',
+                horizontal: 'auto',
+                verticalScrollbarSize: 10,
+                horizontalScrollbarSize: 10,
+                scrollBeyondLastLine: false,
+                readOnly: false,
+                automaticLayout: true,
+                minimap: {
+                    enabled: false
+                },
+                lineHeight: 19,
             });
-        </script>
-    </body>
+            // codeBlock.textContent = input;
+        });
+
+
+        //reset code block
+        var btnReset = document.querySelector("#btn-reset");
+        btnReset.addEventListener('click', (event) => {
+            var oldLanguage = languageSelector.value;
+            codeBlock.textContent = "";
+            var editorCodeBlock = monaco.editor.create(codeBlock, {
+                value: codeContent,
+                language: oldLanguage,
+                theme: 'vs',
+                lineNumber: 'on',
+                glyphMargin: false,
+                vertical: 'auto',
+                horizontal: 'auto',
+                verticalScrollbarSize: 10,
+                horizontalScrollbarSize: 10,
+                scrollBeyondLastLine: false,
+                readOnly: false,
+                automaticLayout: true,
+                minimap: {
+                    enabled: false
+                },
+                lineHeight: 19,
+            });
+        });
+    </script>
+</body>
+
 </html>
