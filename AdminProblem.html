@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách bài tập</title>
+    <title>Quản lý bài tập</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -99,11 +100,14 @@
     <div class="container">
         <div class="grid wide">
             <div class="row">
-                
                 <div class="col c-12 list__info">
                     <div class="container__problem-search">
                         <div class="container__problem-search-nonAction">
                             <span class="container__problem-search-list">Danh sách bài tập</span>
+                            <div class="btn action_product">
+                                <i class="fa-solid fa-plus"></i>
+                                Thêm sản phẩm
+                            </div>
                         </div>
 
                         <div class="container__problem-search-action">
@@ -134,6 +138,7 @@
                                     <th>Số lượng đã vượt qua</th>
                                     <th>Điểm</th>
                                     <th>Tags</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -144,6 +149,22 @@
                                     <td>Count</td>
                                     <td>Point</td>
                                     <td>cơ bản</td>
+                                    <td>
+                                        <div class="d-flex action_btn">
+                                            <a href="#" class="btn bg-success rounded ms-2" title="Xem chi tiết sản phẩm" >
+                                                <i class="fa-solid fa-eye" style="color: white"></i>
+                                            </a>
+                                            <a href="#" class="btn bg-primary rounded ms-2" title="Chỉnh sửa sản phẩm">
+                                                <i class="fa-solid fa-pen" style="color: white"></i>
+                                            </a>
+                                            <button type="button" class="btn bg-dark rounded ms-2" title="Nhập hàng" data-bs-toggle="modal" data-bs-target="#importProductModal" data-index="@i" data-id="@products[i].ID" data-name="@products[i].Name" onclick="transferData(this)">
+                                                <i class="fa-solid fa-plus" style="color: white"></i>
+                                            </button>
+                                            <button type="submit" class="btn bg-danger rounded ms-2 btnDelete" title="Xóa sản phẩm" data-index="@i" data-id="@products[i].ID" onclick="deleteProduct(this)">
+                                                <i class="fa-solid fa-trash-can" style="color: white"></i>
+                                            </button>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>btcode02</td>
@@ -152,6 +173,22 @@
                                     <td>Count</td>
                                     <td>Point</td>
                                     <td>cơ bản</td>
+                                    <td>
+                                        <div class="d-flex action_btn">
+                                            <a href="#" class="btn bg-success rounded ms-2" title="Xem chi tiết sản phẩm" >
+                                                <i class="fa-solid fa-eye" style="color: white"></i>
+                                            </a>
+                                            <a href="#" class="btn bg-primary rounded ms-2" title="Chỉnh sửa sản phẩm">
+                                                <i class="fa-solid fa-pen" style="color: white"></i>
+                                            </a>
+                                            <button type="button" class="btn bg-dark rounded ms-2" title="Nhập hàng" data-bs-toggle="modal" data-bs-target="#importProductModal" data-index="@i" data-id="@products[i].ID" data-name="@products[i].Name" onclick="transferData(this)">
+                                                <i class="fa-solid fa-plus" style="color: white"></i>
+                                            </button>
+                                            <button type="submit" class="btn bg-danger rounded ms-2 btnDelete" title="Xóa sản phẩm" data-index="@i" data-id="@products[i].ID" onclick="deleteProduct(this)">
+                                                <i class="fa-solid fa-trash-can" style="color: white"></i>
+                                            </button>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>btcode03</td>
@@ -160,6 +197,22 @@
                                     <td>Count</td>
                                     <td>Point</td>
                                     <td>cơ bản</td>
+                                    <td>
+                                        <div class="d-flex action_btn">
+                                            <a href="#" class="btn bg-success rounded ms-2" title="Xem chi tiết sản phẩm" >
+                                                <i class="fa-solid fa-eye" style="color: white"></i>
+                                            </a>
+                                            <a href="#" class="btn bg-primary rounded ms-2" title="Chỉnh sửa sản phẩm">
+                                                <i class="fa-solid fa-pen" style="color: white"></i>
+                                            </a>
+                                            <button type="button" class="btn bg-dark rounded ms-2" title="Nhập hàng" data-bs-toggle="modal" data-bs-target="#importProductModal" data-index="@i" data-id="@products[i].ID" data-name="@products[i].Name" onclick="transferData(this)">
+                                                <i class="fa-solid fa-plus" style="color: white"></i>
+                                            </button>
+                                            <button type="submit" class="btn bg-danger rounded ms-2 btnDelete" title="Xóa sản phẩm" data-index="@i" data-id="@products[i].ID" onclick="deleteProduct(this)">
+                                                <i class="fa-solid fa-trash-can" style="color: white"></i>
+                                            </button>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>btcode04</td>
@@ -168,6 +221,22 @@
                                     <td>Count</td>
                                     <td>Point</td>
                                     <td>cơ bản</td>
+                                    <td>
+                                        <div class="d-flex action_btn">
+                                            <a href="#" class="btn bg-success rounded ms-2" title="Xem chi tiết sản phẩm" >
+                                                <i class="fa-solid fa-eye" style="color: white"></i>
+                                            </a>
+                                            <a href="#" class="btn bg-primary rounded ms-2" title="Chỉnh sửa sản phẩm">
+                                                <i class="fa-solid fa-pen" style="color: white"></i>
+                                            </a>
+                                            <button type="button" class="btn bg-dark rounded ms-2" title="Nhập hàng" data-bs-toggle="modal" data-bs-target="#importProductModal" data-index="@i" data-id="@products[i].ID" data-name="@products[i].Name" onclick="transferData(this)">
+                                                <i class="fa-solid fa-plus" style="color: white"></i>
+                                            </button>
+                                            <button type="submit" class="btn bg-danger rounded ms-2 btnDelete" title="Xóa sản phẩm" data-index="@i" data-id="@products[i].ID" onclick="deleteProduct(this)">
+                                                <i class="fa-solid fa-trash-can" style="color: white"></i>
+                                            </button>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>btcode05</td>
@@ -176,6 +245,22 @@
                                     <td>Count</td>
                                     <td>Point</td>
                                     <td>cơ bản</td>
+                                    <td>
+                                        <div class="d-flex action_btn">
+                                            <a href="#" class="btn bg-success rounded ms-2" title="Xem chi tiết sản phẩm" >
+                                                <i class="fa-solid fa-eye" style="color: white"></i>
+                                            </a>
+                                            <a href="#" class="btn bg-primary rounded ms-2" title="Chỉnh sửa sản phẩm">
+                                                <i class="fa-solid fa-pen" style="color: white"></i>
+                                            </a>
+                                            <button type="button" class="btn bg-dark rounded ms-2" title="Nhập hàng" data-bs-toggle="modal" data-bs-target="#importProductModal" data-index="@i" data-id="@products[i].ID" data-name="@products[i].Name" onclick="transferData(this)">
+                                                <i class="fa-solid fa-plus" style="color: white"></i>
+                                            </button>
+                                            <button type="submit" class="btn bg-danger rounded ms-2 btnDelete" title="Xóa sản phẩm" data-index="@i" data-id="@products[i].ID" onclick="deleteProduct(this)">
+                                                <i class="fa-solid fa-trash-can" style="color: white"></i>
+                                            </button>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>btcode06</td>
@@ -184,6 +269,22 @@
                                     <td>Count</td>
                                     <td>Point</td>
                                     <td>cơ bản</td>
+                                    <td>
+                                        <div class="d-flex action_btn">
+                                            <a href="#" class="btn bg-success rounded ms-2" title="Xem chi tiết sản phẩm" >
+                                                <i class="fa-solid fa-eye" style="color: white"></i>
+                                            </a>
+                                            <a href="#" class="btn bg-primary rounded ms-2" title="Chỉnh sửa sản phẩm">
+                                                <i class="fa-solid fa-pen" style="color: white"></i>
+                                            </a>
+                                            <button type="button" class="btn bg-dark rounded ms-2" title="Nhập hàng" data-bs-toggle="modal" data-bs-target="#importProductModal" data-index="@i" data-id="@products[i].ID" data-name="@products[i].Name" onclick="transferData(this)">
+                                                <i class="fa-solid fa-plus" style="color: white"></i>
+                                            </button>
+                                            <button type="submit" class="btn bg-danger rounded ms-2 btnDelete" title="Xóa sản phẩm" data-index="@i" data-id="@products[i].ID" onclick="deleteProduct(this)">
+                                                <i class="fa-solid fa-trash-can" style="color: white"></i>
+                                            </button>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>btcode07</td>
@@ -192,6 +293,22 @@
                                     <td>Count</td>
                                     <td>Point</td>
                                     <td>cơ bản</td>
+                                    <td>
+                                        <div class="d-flex action_btn">
+                                            <a href="#" class="btn bg-success rounded ms-2" title="Xem chi tiết sản phẩm" >
+                                                <i class="fa-solid fa-eye" style="color: white"></i>
+                                            </a>
+                                            <a href="#" class="btn bg-primary rounded ms-2" title="Chỉnh sửa sản phẩm">
+                                                <i class="fa-solid fa-pen" style="color: white"></i>
+                                            </a>
+                                            <button type="button" class="btn bg-dark rounded ms-2" title="Nhập hàng" data-bs-toggle="modal" data-bs-target="#importProductModal" data-index="@i" data-id="@products[i].ID" data-name="@products[i].Name" onclick="transferData(this)">
+                                                <i class="fa-solid fa-plus" style="color: white"></i>
+                                            </button>
+                                            <button type="submit" class="btn bg-danger rounded ms-2 btnDelete" title="Xóa sản phẩm" data-index="@i" data-id="@products[i].ID" onclick="deleteProduct(this)">
+                                                <i class="fa-solid fa-trash-can" style="color: white"></i>
+                                            </button>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

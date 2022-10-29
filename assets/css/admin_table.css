@@ -48,8 +48,8 @@ table {
 }
 
 th {
-    font-size: 14px;
     text-align: center;
+    font-size: 14px;
     padding: 10px;
     font-weight: bolder;
     border-bottom: 1px solid #ddd;
@@ -112,6 +112,11 @@ tr:hover {
     align-items: center;
     padding: 15px;
     border-radius: 3px;
+}
+
+.container__problem-search-nonAction {
+    display: flex;
+    align-items: baseline;
 }
 
 .container__problem-search-list {
@@ -178,7 +183,7 @@ tr:hover {
 .container__problem-form-search {
     margin: 0 40px;
     position: relative;
-   
+    
 }
 
 .container__problem-form-input {
@@ -192,4 +197,20 @@ tr:hover {
     top: 10px;
     color: #666;
     font-size: 1.2rem;
+}
+
+.action_product {
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.action_product:hover {
+    color: #3a88e6;
+    border: 1px solid #3a88e6;
+}
+
+.action_btn {
+    display: flex;
+    justify-content: space-around;
 }
