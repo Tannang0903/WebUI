@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/add_problem.css">
+    <title>Thêm bài tập</title>
+</head>
+
+<body>
+    <div class="main">
+        <form action="" method="POST" class="form" id="form_add-problem">
+            <h1 class="heading">Thêm bài tập</h1>
+            <div class="spacer"></div>
+            <div class="form-group">
+                <label for="name" class="form-label">Tên bài tập</label>
+                <input id="name" name="name" type="text" placeholder="Nhập tên bài tập" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="description" class="form-label">Mô tả</label>
+                <textarea name="description" id="editor1" cols="" rows="3" class="form-control-text"></textarea>
+                <span class="form-message"></span>
+            </div>
+
+          
+
+            <div class="form-group">
+                <label for="level" class="form-label">Mức độ</label>
+                <select id="level" name="level" class="form-control"> 
+                    <option value="">-- Chọn mức độ --</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group" id="form-data">
+                
+            </div>
+
+            <div class="form-btn">
+                <input type="button" value="Thêm Testcase" class="form-add-testcase" id="add_testcase">
+                <button class="form-submit">Thêm bài toán</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./ckeditor/ckeditor.js"></script>
+<script src="./ckfinder/ckfinder.js"></script>
+<script src="./assets/js/add_problem.js"></script>s
+
+<script>
+    
+</script>
+
+<script>
+    Validator({
+        form: '#form_add-problem',
+        formGroupSelector: '.form-group', 
+        errorSelector: '.form-message',
+        rules: [
+            Validator.isRequired('#name', 'Vui lòng nhập tên bài tập!'),
+            Validator.isRequired('#editor1', 'Vui lòng nhập mô tả!'),
+            Validator.isRequired('#level', 'Vui lòng chọn mức độ!'),
+        ],
+    });
+</script>
+<script>
+    CKEDITOR.replace( 'editor1', {
+	filebrowserBrowseUrl: 'ckfinder/ckfinder.html',
+	filebrowserUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files'
+} );
+</script>
+</html>
