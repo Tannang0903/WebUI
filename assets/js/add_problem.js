@@ -1,4 +1,3 @@
-
 var btnAdd = document.getElementById("add_testcase");
 btnAdd.onclick = function () {
     var formTestcase = document.getElementById("form-data");

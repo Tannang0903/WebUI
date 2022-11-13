@@ -7,38 +7,47 @@
         <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.2-web/css/all.css">
         <title>Login</title>
     </head>
-
     <body>
         <div class="container">
             <div class="forms">
-                <div class="form login">
-                    <span class="title">Đăng nhập</span>
-                    <form action="#">
-                        <div class="input-field">
-                            <input type="text" placeholder="Nhập email của bạn" required>
-                            <i class="fa fa-envelope"></i>
+                <div class="login-box">
+                    <h2 class="title">Login</h2>
+                    <form method="POST">
+                        <div class="user-box">
+                            <input type="text" name="username" required>
+                            <label>Username</label>
                         </div>
-                        <div class="input-field">
-                            <input type="password" placeholder="Nhập mật khẩu của bạn" required>
-                            <i class="fa fa-lock"></i>
+                        <div class="user-box">
+                            <input type="password" name="password" required>
+                            <label>Password</label>
                         </div>
-                        
+                        <!-- <?php
+                            if (isset($error)) {
+                                echo '<p class="errorInfo">'.$error.'</p>';
+                            }
+                        ?> -->
                         <div class="checkbox-text">
                             <div class="checkbox-content">
                                 <input type="checkbox" id="logcheck">
                                 <label for="logcheck" class="text">Nhớ mật khẩu</label>
                             </div>
-                            <a href="./ResetPasword.html" class="text">Quên mật khẩu ?</a>
+                            <a href="#!" class="text">Quên mật khẩu ?</a>
                         </div>
                         <div class="input-field button">
-                            <input type="button" value="Đăng Nhập">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <input type="submit" value="Đăng Nhập">
+                        </div>
+                        <div class="login-signup">
+                            <span class="text">Chưa phải thành viên
+                                <!-- <?php
+                                    echo '<a href="'.$this -> url("Auth", "register").'" class="text signup-text">Đăng kí</a>';
+                                ?> -->
+                            </span>
                         </div>
                     </form>
-                    <div class="login-signup">
-                        <span class="text">Chưa phải thành viên
-                            <a href="./Resigtration.html" class="text signup-text">Đăng kí</a>
-                        </span>
-                    </div>
                 </div>
             </div>
         </div>

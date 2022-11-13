@@ -3,15 +3,37 @@
     background-color: #f1f1f1;
 }
 
-
+/* Description */
 .problem__main-description {
     background-color: rgb(250 250 250);
     padding: 40px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
 }
 
+.problem__main-heading {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #515a6e;
+    margin-bottom: 30px;
+}
+
+.problem__main-title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 24px 0 12px;
+    color: #191a1b;
+}
+
+.problem__main-content {
+    font-size: 1.6rem;
+    line-height: 24px;
+    margin: 0 25px;
+    color: #5b6477;
+}
+
+/* Action */
 .problem__main-action {
     margin-top: 15px;
     background-color: rgb(250 250 250);
